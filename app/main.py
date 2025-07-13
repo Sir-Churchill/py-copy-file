@@ -10,5 +10,6 @@ def copy_file(files: str) -> None:
                 open(ls[2], "w") as file_out
             ):
                 file_out.write(file_in.read())
+                print("File copied successfully")
         except FileNotFoundError:
             return None
